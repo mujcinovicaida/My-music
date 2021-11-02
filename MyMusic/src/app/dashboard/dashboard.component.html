@@ -1,0 +1,18 @@
+<div class="dashboard">
+    <h1>Hello!</h1>
+    <h2>Welcome to MY MUSIC APP</h2>
+    <div class="example-container">
+      <mat-label>Enter your email</mat-label>
+      <br>
+      <input class="input" matInput placeholder="pat@example.com"  required>
+      <br>
+      <mat-label>Enter your password</mat-label>
+      <br>
+      <input class="input" matInput  required>
+      <br>
+  </div>
+<button class="btn" mat-raised-button color="primary" [routerLink]="['/posts']">SIGN IN</button>
+<br>
+<p>If you don't have your account, please </p>
+<button class="btn" mat-raised-button color="primary" [routerLink]="['/join']">JOIN US</button>
+</div>
