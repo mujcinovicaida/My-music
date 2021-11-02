@@ -9,19 +9,31 @@ import {MatButtonModule} from '@angular/material/button';
 import { PostsComponent } from './posts/posts.compoent';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { JoinComponent } from './join/join.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ModalComponent } from './modal/modal.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     PostsComponent,
-    JoinComponent
+    JoinComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule,
+    MatCardModule,
+    MatDialogModule,
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
