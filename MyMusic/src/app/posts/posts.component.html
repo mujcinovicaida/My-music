@@ -1,20 +1,20 @@
 <h1 class="header">PLAYLIST</h1>
-<button class="btn1" mat-raised-button color="primary" >+ SONG</button>
+<button class="btn1" mat-raised-button color="primary" [routerLink]="['/add']"  >+ SONG</button>
 <div class="cards">
     
     <div class="card" *ngFor="let post of posts">
         <mat-card>
             <mat-card-header>
                 <mat-card-title>
-                    {{post.title}}
+                    {{post.songName}}
                 </mat-card-title>
             </mat-card-header>
-            <p>{{post.body}}</p>
+            <p>{{post.songUrl}}</p>
             <mat-card-actions>
                 <div class="actions">
-                    <button class="btn" mat-raised-button color="primary" (click)="readMore(post.id)" >View more</button>
-                    <button class="btn" mat-raised-button color="primary" >Edit</button>
-                    <button class="btn" mat-raised-button color="primary" >Delete</button>
+                    <button class="btn" mat-raised-button color="primary" (click)="readMore(post.songID)" >View more</button>
+                    <button class="btn" mat-raised-button color="primary" [routerLink]="['/update']" >Edit</button>
+                    <button class="btn" mat-raised-button color="primary" (click)="deleteSong(post.songID)">Delete</button>
                 </div>
             </mat-card-actions>
         </mat-card>

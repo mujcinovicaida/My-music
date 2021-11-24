@@ -13,6 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ModalComponent } from './modal/modal.component';
+import { UpdateComponent } from './update/update.component';
+import { AddComponent } from './add/add.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +24,9 @@ import { ModalComponent } from './modal/modal.component';
     DashboardComponent,
     PostsComponent,
     JoinComponent,
-    ModalComponent
+    ModalComponent,
+    UpdateComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
@@ -32,8 +37,7 @@ import { ModalComponent } from './modal/modal.component';
     HttpClientModule,
     MatCardModule,
     MatDialogModule,
-
-    
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

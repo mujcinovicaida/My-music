@@ -1,8 +1,10 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddComponent } from './add/add.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { JoinComponent } from './join/join.component';
 import { PostsComponent } from './posts/posts.compoent';
+import { UpdateComponent } from './update/update.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path:'join',
     component: JoinComponent
+  },
+  {
+    path:'update',
+    component: UpdateComponent
+  },
+  {
+    path:'add',
+    component:AddComponent
   }
 ];
 

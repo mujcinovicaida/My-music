@@ -1,21 +1,19 @@
+<form #userRegistrationDorm="ngForm" >
+
 <div class="join">
     <h1>Hello!</h1>
     <h2>Welcome to MY MUSIC APP</h2>
     <div class="example-container">
       <mat-label>Enter your email</mat-label>
       <br>
-      <input class="input" matInput placeholder="pat@example.com"  required>
-      <br>
-      <mat-label>Enter your name</mat-label>
-      <br>
-      <input class="input" matInput placeholder="Michael"  required>
+      <input class="input"  matInput placeholder="pat@example.com"   required>
       <br>
       <mat-label>Enter your password</mat-label>
       <br>
-      <input class="input" matInput  required>
+      <input class="input" matInput matInput  required>
       <br>
   </div>
-<button class="btn" mat-raised-button color="primary" [routerLink]="['/posts']">JOIN</button>
+<button class="btn" mat-raised-button color="primary" type="submit" [routerLink]="['/posts']" >JOIN</button>
 <br>
-
 </div>
+</form>

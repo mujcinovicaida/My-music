@@ -1,0 +1,45 @@
+<form (ngSubmit)="test()" action="" #songForm="ngForm" >
+    <div class="add">
+        <h1>Add new song:</h1>
+         <div class="example-container">
+         <!-- <input type="hidden" name="id"  value="song.SongID" />  -->
+          <mat-label>Enter song name</mat-label>
+          <br>
+          <input class="input" matInput [(ngModel)]="song.SongName" name="SongName" #SongName="ngModel"  [ngModelOptions]="{standalone: true}" required>
+          <br>
+           <mat-label>Enter artist name</mat-label>
+          <br>
+          <input class="input" matInput [(ngModel)]="song.ArtistName" [ngModelOptions]="{standalone: true}" required>
+          <br>
+          <mat-label>Enter song URL</mat-label>
+          <br>
+          <input class="input" matInput [(ngModel)]="song.SongUrl" [ngModelOptions]="{standalone: true}" required>
+          <br>
+          <mat-label>Song rating</mat-label>
+          <br>
+          <input class="input" matInput [(ngModel)]="song.SongRating" [ngModelOptions]="{standalone: true}"  required>
+          <br>
+          <mat-label>Favourite (yes or no)</mat-label>
+          <br>
+          <input class="input" matInput [(ngModel)]="song.Favourite" [ngModelOptions]="{standalone: true}" required>
+          <br>
+          <mat-label>Date entered</mat-label>
+          <br>
+          <input class="input" matInput [(ngModel)]="song.DateEntered" [ngModelOptions]="{standalone: true}" required>
+          <br>
+          <br>
+          <mat-label>Date edited</mat-label>
+          <br>
+          <input class="input" matInput [(ngModel)]="song.DateEdited" [ngModelOptions]="{standalone: true}" required>
+          <br> 
+          <mat-label>Category</mat-label>
+          <br>
+          <input class="input" matInput [(ngModel)]="song.CategoryID" [ngModelOptions]="{standalone: true}" required>
+          <br>
+      </div> 
+
+<button class="btn" mat-raised-button color="primary" type="submit">ADD SONG</button>
+<br>
+
+</div>
+</form>
